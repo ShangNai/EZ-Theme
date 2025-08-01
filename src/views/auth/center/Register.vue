@@ -410,7 +410,7 @@
 
               {{ $t('auth.agreeToTerms') }} 
 
-              <a :href="config.tos_url || '#'" target="_blank" class="">{{ $t('auth.termsOfService') }}</a>
+              <a :href="config.tos_url || '#/tospage'" target="_blank" class="">{{ $t('auth.termsOfService') }}</a>
 
               <span class="required">*</span>
 
