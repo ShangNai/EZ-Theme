@@ -653,8 +653,23 @@ const getTimeBasedGreeting = () => {
 
   const hour = new Date().getHours();
 
-  
-
+  const welcomeMessages = [
+    'Welcome back.',
+    'Good to see you again.',
+    "You're connected.",
+    'A new beginning.',
+    'Fasten your seatbelt.',
+    'Speed is on your side.',
+    'Network acceleration ready.',
+    "Let's get started.",
+    "You're all set."
+  ];
+  // 30%概率显示随机欢迎语
+  if (Math.random() < 0.3) {
+    const idx = Math.floor(Math.random() * welcomeMessages.length);
+    return welcomeMessages[idx];
+  }
+  // 根据时间段返回不同的问候语
   if (hour >= 5 && hour < 12) {
 
     return 'Good Morning';
