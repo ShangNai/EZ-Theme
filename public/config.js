@@ -26,9 +26,8 @@ window.EZ_CONFIG = {
     // 支持字符串形式(单个API地址)或数组形式(多个备选API地址)
     // 多个地址时，会按顺序检测可用性，并使用第一个可用的地址
     staticBaseUrl: [
-      'https://panghu.com/api/v1',
-      'https://panghu.com/api/v1',
-      'https://panghu.com/api/v1'
+      'https://app.starl.xyz/api/v1',
+      'https://lustar.xyz/api/v1'
     ],
     
     // 自动获取模式配置 (urlMode = 'auto'时使用)
@@ -134,7 +133,7 @@ window.EZ_CONFIG = {
   // 认证页面布局配置
   AUTH_LAYOUT_CONFIG: {
     // 布局类型: 'center' 为居中卡片布局, 'split' 为左右分栏布局
-    layoutType: 'center',
+    layoutType: 'split',
     
     // 左右分栏布局配置 (仅当 layoutType 为 'split' 时生效)
     splitLayout: {
@@ -211,13 +210,7 @@ window.EZ_CONFIG = {
       closeWaitSeconds: 0
     }
   },
-  ORDER_CONFIG:{
-        // 下单前二次确认
-        confirmOrder:true,
-        // 下单前二次确认内容
-        confirmOrderContent:"<p><strong style='color: red'>无法提供相关教程和使用说明。</strong></p><p><strong style='color: red'>不会使用请勿购买，没有退款政策</strong></p>",
-        
-    },
+
   // 仪表盘页面配置
   DASHBOARD_CONFIG: {
     // 是否在欢迎卡片中显示用户邮箱 (true=显示, false=隐藏)
@@ -284,10 +277,12 @@ window.EZ_CONFIG = {
     showSurge: true,
     showStash: true,
     showQuantumultX: true,
+    showHiddifyIOS: true,
     showSingboxIOS: true,
     showLoon: true,
     
     // Android平台客户端
+    showFlClashAndroid: true,
     showV2rayNG: true,
     showClashAndroid: true,
     showSurfboard: true,
@@ -297,12 +292,16 @@ window.EZ_CONFIG = {
     showHiddifyAndroid: true,
     
     // Windows平台客户端
+    showFlClashWindows: true,
+    showClashVergeWindows: true,
     showClashWindows: true,
     showNekoray: true,
     showSingboxWindows: true,
     showHiddifyWindows: true,
     
     // MacOS平台客户端
+    showFlClashMac: true,
+    showClashVergeMac: true,
     showClashX: true,
     showClashMetaX: true,
     showSurgeMac: true,
