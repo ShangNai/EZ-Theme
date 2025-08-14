@@ -35,13 +35,6 @@ const isObject = item => {
   return (item && typeof item === 'object' && !Array.isArray(item));
 };
 
-// 获取授权码
-
-// 用户授权码
-export const USER_LICENSE_CODE = '';
-
-export const LICENSE_CODE = USER_LICENSE_CODE || getConfig('LICENSE_CODE', '');
-
 // 获取面板类型的常量
 // 可选值: 'V2board', 'Xiao-V2board' 或 'Xboard'
 export const PANEL_TYPE = getConfig('PANEL_TYPE', 'V2board');
