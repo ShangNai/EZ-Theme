@@ -5,9 +5,6 @@
  */
 
 window.EZ_CONFIG = {
-  // 授权码配置 - 请填入您的授权码
-  LICENSE_CODE: '', // EZ THEME的授权码 确保下方 SiteName 修改完成
-
   // 面板类型配置 - 请选择您使用的面板类型
   PANEL_TYPE: 'V2board', // 可选值: 'V2board', 'Xiao-V2board' 或 'Xboard'
   // 说明: 
