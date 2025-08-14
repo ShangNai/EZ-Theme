@@ -351,10 +351,12 @@ const DEFAULT_CLIENT_CONFIG = {
   showSurge: true,          // Surge
   showStash: true,          // Stash
   showQuantumultX: true,    // QuantumultX
+  showHiddifyIOS: true,     // Hiddify for IOS
   showSingboxIOS: true,     // SingBox for iOS
   showLoon: true,           // Loon
   
   // Android平台客户端
+  showFlClashAndroid: true,   // FlClash for Android
   showV2rayNG: true,          // V2rayNG
   showClashAndroid: true,     // Clash for Android
   showSurfboard: true,        // Surfboard
@@ -364,12 +366,16 @@ const DEFAULT_CLIENT_CONFIG = {
   showHiddifyAndroid: true,   // Hiddify for Android
   
   // Windows平台客户端
+  showFlClashWindows: true,   // FlClash for Windows
+  showClashVergeWindows: true,// ClashVerge for Windows
   showClashWindows: true,     // Clash for Windows
   showNekoray: true,          // Nekoray
   showSingboxWindows: true,   // SingBox for Windows
   showHiddifyWindows: true,   // Hiddify for Windows
   
   // MacOS平台客户端
+  showFlClashMac: true,       // FlClash for Mac
+  showClashVergeMac: true,    // ClashVerge for Mac
   showClashX: true,           // ClashX
   showClashMetaX: true,       // ClashX Meta
   showSurgeMac: true,         // Surge for Mac
@@ -437,25 +443,6 @@ const DEFAULT_SHOP_CONFIG = {
 export const SHOP_CONFIG = mergeDeep(DEFAULT_SHOP_CONFIG, getConfig('SHOP_CONFIG'));
 
   // ===========================================================
-
-
-
-
-/**
- * 商店二次确认
- * 提交订单强制二次确认
- */
-const DEFAULT_ORDER_CONFIG = {
-  // 是否启用二次确认
-  confirmOrder: true,
-  // 二次确认内容
-  confirmOrderContent: "<p>您确定要购买该套餐吗？</p>",
-};
-export const ORDER_CONFIG = mergeDeep(DEFAULT_ORDER_CONFIG, getConfig('ORDER_CONFIG'));
-  
-
-// ===========================================================
-
 
 /**
  * 仪表盘页面配置
